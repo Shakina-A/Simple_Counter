@@ -9,9 +9,10 @@ function App() {
     <div className={dark?"container dark":"container"}>
       <h1>Simple Counter App</h1>
       <Counter></Counter>
-      <button onClick={()=>setDark(!dark)}>
-        {dark ?"Switch to Light Mode":"Switch to Dark Mode"}
+     <button className="toggle-btn" onClick={() => setDark(!dark)}>
+        {dark ?"☀️":"🌙"}
       </button>
+      
     </div>
   );
 }
